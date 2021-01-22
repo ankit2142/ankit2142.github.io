@@ -1,0 +1,155 @@
+*{
+
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+     
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+     background-image: url(test.jpg);
+     background-size: cover;
+}
+
+.wrapper
+{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.welcome_text
+{
+     
+    width: 400px;
+
+
+}
+.welcome_form input,
+.welcome_form button{
+    display: block;
+    width:100%;
+}
+
+.welcome_form input
+{
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+
+}
+.welcome_form button
+{  
+    font-size: 30px;
+    padding: 20px,0;
+    border:none;
+    background-color: white;
+    border-radius: 100px;
+    transition: 0.4s all;
+
+
+}
+.welcome_form button:hover
+{
+    transform: translate(-5px);
+    cursor:pointer;
+}
+.welcome_form input:focus,
+.welcome_form button:focus{
+    outline:none;
+}
+
+.quiz
+{   display:grid;
+    grid-template-rows: 60px auto;
+    width: 800px;
+    height: 500px;
+    background-color: white;
+
+}
+.quiz_header
+{   display:flex;
+    justify-content: space-between;
+    background-color: rgb(247, 248, 248);
+}
+.quiz_body
+{   padding: 30px;
+    background-color:rgb(248, 234, 234);
+}
+.user
+{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.timer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgb(168, 126, 199);
+    color: white;
+    padding :0 30px;
+}
+.option_group
+{
+    list-style-type: none;
+    margin:30px 0;
+}
+
+.option
+{
+    background-color: white;
+    width: 300px;
+    padding:15px 20px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    border:2px solid transparent;
+}
+.option:hover
+{
+    cursor: pointer;
+    background-color: rgb(160, 126, 160);
+    
+
+}
+.next_btn
+{
+   background-color:rgb(115, 80, 139);
+   color: white;
+   padding:15px 35px;
+   border:none;
+   border-radius: 40px;
+}
+.next_btn:hover
+{
+    background-color: rgb(212, 98, 57);
+}
+.active
+{
+    background-color: rgb(160, 126, 160);
+    
+}
+
+.user_name,
+.user_score,
+.user_time{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    font-size: xx-lag;
+    font-weight: 200;
+}
+.block
+{
+    background-color: rgb(82, 78, 82);
+    opacity: 0.8;
+}
